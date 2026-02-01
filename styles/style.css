@@ -5,10 +5,13 @@
 }
 
 :root {
-  --brand-color: #ff902a;
+  --main-color: #c66e3d;
+  --second-color: #e9d2ae;
+  --third-color: #d2863f;
   --coffee-color: #8b5e3c;
   --common-font: Arial, Helvetica, sans-serif;
-  --nav-font: "Inter";
+  --nav-font: Inter, sans-serif;
+  --heading-font: Comfortaa, sans-serif;
 }
 
 img {
@@ -27,28 +30,49 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 nav {
-  height: 10vh;
+  height: 80px;
   display: flex;
   align-items: center;
+  /* padding: 0 20px; */
+  /* background-color: var(--secondary-color); */
 }
 
 nav ul {
   display: flex;
-  margin-left: 50px;
+  margin-left: 20px;
   font-family: var(--nav-font);
 }
 
 nav ul li {
   padding: 20px;
+
+  /* border: 1px solid black; */
+}
+
+nav a {
+  color: black;
+}
+
+.logo {
+  /* border: 1px solid black; */
+  height: 100%;
+  /* width: auto; */
+  aspect-ratio: 1/1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
 
 .logo img {
-  width: 80px;
+  width: 100%;
   height: auto;
+  /* max-height: 100%;  */
+  /* max-width: 100%; */
   object-fit: contain;
 }
 
@@ -58,14 +82,35 @@ nav ul li {
   justify-content: space-around;
   padding: 50px;
   min-height: 60vh;
-  background-color: var(--brand-color);
+  background-color: var(--main-color);
 }
 
 #hero img {
-  width: 400px;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  /* border: 1px solid black; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+h1 img {
+  display: inline-block;
+  height: 4em;
+  width: auto;
+  vertical-align: bottom;
+  aspect-ratio: 1/1;
+  /* border: 1px solid black; */
+}
+
+section {
+  padding: 10px;
 }
 
 footer {
+  padding: 5px;
 }
 
 .social-media {
